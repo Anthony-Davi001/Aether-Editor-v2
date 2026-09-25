@@ -25,7 +25,7 @@ A lightweight and efficient Markdown editor built with Python and Tkinter, featu
 #### Current features:
 
 - **Markdown Writing & Outline:** Write seamlessly with an auto-generated document outline for easy navigation.
-- **Live PDF Preview:** Real-time PDF rendering side-by-side using PyMuPDF.
+- **Live PDF Preview:** Real-time PDF rendering side-by-side.
 - **Export to PDF:** Convert and save your markdown documents directly to PDF.
 - **Syntax Highlighting:** Custom regex-based highlighting for Markdown elements.
 - **Styling Themes:** Beautiful Light and Dark modes powered by `sv_ttk`.

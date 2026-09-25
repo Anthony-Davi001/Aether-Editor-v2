@@ -1,5 +1,5 @@
 """
-Syntax Highlighting Engine - Markdown & Theme Management.
+Syntax Highlighting Engine.
 
 This module provides real-time Markdown syntax highlighting and visual theme 
 configuration for a Tkinter text widget. It parses standard Markdown formatting 
@@ -101,7 +101,6 @@ class SyntaxHighlighter:
             ("link", r"\[.*?\]\(.*?\)")                 
         ]
 
-        # Apply tags based on regex matches
         for tag_name, pattern in patterns:
             for match in re.finditer(pattern, content, re.MULTILINE):
                 start = f"1.0 + {match.start()} chars"

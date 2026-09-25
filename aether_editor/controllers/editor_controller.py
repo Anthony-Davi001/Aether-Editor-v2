@@ -56,12 +56,11 @@ class EditorController:
     def handle_text_changed(self):
         """Handles real-time text change events originating from the View.
 
-        This is a core utility method that runs whenever the user types. It performs
-        three main tasks:
-        1. Refreshes the document outline based on the new text.
-        2. Attempts to auto-save the document if it's already linked to a file path.
-        3. Spawns a background thread to generate the PDF preview without freezing
-           the main UI thread.
+        This core utility method runs whenever the user types, simultaneously 
+        refreshing the document outline based on the new text and attempting 
+        to auto-save the document if it is already linked to a file path. 
+        Additionally, it spawns a background thread to generate the PDF preview 
+        without freezing the main UI thread.
 
         Raises:
             IOError: If the auto-save operation fails due to disk or permission issues.

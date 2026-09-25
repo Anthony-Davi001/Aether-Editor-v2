@@ -1,5 +1,5 @@
 """
-PDF Preview Engine - Canvas Rendering & Document View.
+PDF Preview Engine.
 
 This module provides PDF rendering capabilities for Tkinter applications by
 integrating PyMuPDF (fitz) and Pillow (PIL). It converts raw PDF binary data

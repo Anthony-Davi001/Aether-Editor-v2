@@ -28,6 +28,14 @@ To highlight something as inline code within a sentence, use backticks: `var x =
 2. Run the script.
 3. Start typing!
 
+## Quotes and Links
+
+Blockquotes are great for highlighting ideas or important notes:
+
+> "Simplicity is the ultimate sophistication." - Leonardo da Vinci
+
+You can also easily insert [links to web pages](https://example.com).
+
 ## Syntax Highlighted Code Blocks
 
 You can create code blocks by wrapping text with triple backticks and the language name. See how Python gets highlighted:

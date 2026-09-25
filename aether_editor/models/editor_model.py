@@ -171,7 +171,7 @@ class EditorModel:
         or tabs. It strips away the folder structure, leaving only the file name.
 
         Returns:
-            str: The base name of the current file (e.g., 'document.md'), or 
+            str: The base name of the current file (e.g., 'document.md'), or
                 'No title.md' if no file is currently active.
         """
 

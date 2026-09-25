@@ -51,7 +51,6 @@ class EditorView:
 
         self._setup_ui()
         
-        # Instantiate the extracted sub-components
         self.highlighter = SyntaxHighlighter(self.text_editor)
         self.previewer = PDFPreviewer(self.canvas)
 
@@ -78,10 +77,9 @@ class EditorView:
     def _setup_ui(self):
         """Builds the main window layout, menus, and widgets.
 
-        Constructs a PanedWindow containing three main areas:
-        1. Sidebar (Notebook with Outline and File tree tabs)
-        2. Editor pane (Text widget for Markdown)
-        3. Preview pane (Canvas widget for PDF rendering)
+        Constructs a PanedWindow containing three main areas: a sidebar notebook
+        with Outline and File tree tabs, an editor pane utilizing a Text widget
+        for Markdown, and a preview pane using a Canvas widget for PDF rendering.
         """
 
         menubar = tk.Menu(self.root)
@@ -463,7 +461,7 @@ class EditorView:
         Args:
             title (str): The title of the popup window.
             msg (str): The body text of the message.
-            msg_type (str): The type of message ("info", "warning", or "error"). 
+            msg_type (str, optional): The type of message ("info", "warning", or "error"). 
                 Defaults to "info".
         """
         if msg_type == "info":
